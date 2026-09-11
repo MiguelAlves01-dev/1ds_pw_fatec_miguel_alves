@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplos Responsivos com 4 Frameworks</title>
+
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+ 
+  <link rel="stylesheet"
+        href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+  <link rel="stylesheet" href="style(4).css">
+</head>
+
+<body>
+  
+  <nav class="navbar is-primary" role="navigation" aria-label="menu principal">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#topo">
+        <strong>MinhaMarca</strong>
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+         data-target="navbarMenu" id="navbarBurger">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="#topo">Início</a>
+        <a class="navbar-item" href="#tabela">Tabela</a>
+        <a class="navbar-item" href="#formulario">Formulário</a>
+        <a class="navbar-item" href="#galeria">Galeria</a>
+        <a class="navbar-item" href="#modal-section">Modal</a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">Mais</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item">Sobre nós</a>
+            <a class="navbar-item">Contato</a>
+            <hr class="navbar-divider">
+            <a class="navbar-item">Reportar problema</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-light">Entrar</a>
+            <a class="button is-warning">Cadastrar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+ 
+  <section class="section" id="tabela" data-aos="fade-right">
+    <div class="container">
+      <h2 class="title is-3">Tabela Responsiva</h2>
+      <p class="subtitle is-6">
+        Em telas estreitas, a tabela ganha rolagem horizontal automática graças
+        ao Bulma.
+      </p>
+
+      <div class="table-container">
+        <table class="table is-striped is-hoverable is-fullwidth">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Produto</th>
+              <th>Categoria</th>
+              <th>Preço</th>
+              <th>Estoque</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Teclado mecânico</td>
+              <td>Periféricos</td>
+              <td>R$ 349,90</td>
+              <td>24</td>
+              <td><span class="tag is-success">Disponível</span></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Monitor 27"</td>
+              <td>Monitores</td>
+              <td>R$ 1.299,00</td>
+              <td>5</td>
+              <td><span class="tag is-warning">Estoque baixo</span></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Mouse sem fio</td>
+              <td>Periféricos</td>
+              <td>R$ 129,90</td>
+              <td>0</td>
+              <td><span class="tag is-danger">Esgotado</span></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Headset gamer</td>
+              <td>Áudio</td>
+              <td>R$ 259,90</td>
+              <td>12</td>
+              <td><span class="tag is-success">Disponível</span></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Webcam Full HD</td>
+              <td>Vídeo</td>
+              <td>R$ 199,90</td>
+              <td>8</td>
+              <td><span class="tag is-success">Disponível</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="formulario" data-aos="zoom-in">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-half-desktop is-full-mobile">
+
+          <div class="form-card rounded-2xl p-6 md:p-8 shadow-2xl">
+            <h2 class="title is-3 animate__animated animate__fadeIn">
+              Formulário de Contato
+            </h2>
+
+            <p class="subtitle is-6">
+              O grid do Bulma reorganiza os campos lado a lado no desktop e
+              empilhados no celular.
+            </p>
+
+            <form id="contatoForm">
+              <div class="columns is-mobile is-multiline">
+                <div class="column is-half-tablet is-full-mobile">
+                  <div class="field">
+                    <label class="label">Nome</label>
+                    <div class="control">
+                      <input class="input" type="text"
+                             placeholder="Seu nome completo" required>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="column is-half-tablet is-full-mobile">
+                  <div class="field">
+                    <label class="label">E-mail</label>
+                    <div class="control">
+                      <input class="input" type="email"
+                             placeholder="voce@exemplo.com" required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label">Assunto</label>
+                <div class="control">
+                  <div class="select is-fullwidth">
+                    <select>
+                      <option>Dúvida</option>
+                      <option>Sugestão</option>
+                      <option>Reclamação</option>
+                      <option>Outro</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label">Mensagem</label>
+                <div class="control">
+                  <textarea class="textarea"
+                            placeholder="Escreva sua mensagem aqui"
+                            rows="4" required></textarea>
+                </div>
+              </div>
+
+              <div class="field">
+                <div class="control">
+                  <label class="checkbox">
+                    <input type="checkbox" required>
+                    Concordo com os termos de uso
+                  </label>
+                </div>
+              </div>
+
+              <div class="field is-grouped">
+                <div class="control">
+                  <button type="submit"
+                          class="button is-primary animate__animated">
+                    Enviar
+                  </button>
+                </div>
+
+                <div class="control">
+                  <button type="reset" class="button is-light">
+                    Limpar
+                  </button>
+                </div>
+              </div>
+            </form>
+
+            <div id="mensagemSucesso"
+                 class="notification is-success mt-4"
+                 style="display:none;">
+              Formulário enviado com sucesso! (exemplo de demonstração)
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <section class="section" id="galeria" data-aos="fade-left">
+    <div class="container">
+      <h2 class="title is-3">Galeria de Imagens</h2>
+      <p class="subtitle is-6">
+        A galeria utiliza JavaScript para controlar os slides, enquanto AOS
+        anima a entrada da seção e Tailwind complementa o visual.
+      </p>
+
+      <div class="carousel rounded-2xl shadow-2xl">
+        <div class="carousel-track" id="carouselTrack">
+
+          <div class="carousel-slide">
+            <img src="monitor.jpg" alt="Monitor Gamer">
+            <p class="has-text-centered mt-2">Monitor Gamer</p>
+          </div>
+
+          <div class="carousel-slide">
+            <img src="teclado.jpe" alt="Teclado mecanico">
+            <p class="has-text-centered mt-2">Teclado mecanico</p>
+          </div>
+
+          <div class="carousel-slide">
+            <img src="ps5.jpg" alt="PS5 PRO">
+            <p class="has-text-centered mt-2">PS5 PRO</p>
+          </div>
+
+        </div>
+
+        <button class="carousel-btn carousel-prev"
+                id="prevBtn"
+                aria-label="Slide anterior">&#10094;</button>
+
+        <button class="carousel-btn carousel-next"
+                id="nextBtn"
+                aria-label="Próximo slide">&#10095;</button>
+
+        <div class="carousel-dots" id="carouselDots"></div>
+      </div>
+    </div>
+  </section>
+
+   <section class="section" id="modal-section" data-aos="flip-up">
+    <div class="container">
+      <div class="modal-intro rounded-2xl p-8 shadow-xl">
+        <h2 class="title is-3">Modal (Janela Modal)</h2>
+
+        <p class="subtitle is-6">
+          O modal utiliza os componentes do Bulma e recebe uma animação
+          adicional do Animate.css quando é aberto.
+        </p>
+
+        <button class="button is-primary animate__animated"
+                id="openModalBtn">
+          Abrir modal
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal" id="exampleModal">
+    <div class="modal-background"></div>
+
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Confirmar ação</p>
+        <button class="delete"
+                aria-label="fechar"
+                id="closeModalX"></button>
+      </header>
+
+      <section class="modal-card-body">
+        <p>
+          Tem certeza que deseja excluir este item?
+          Essa ação não pode ser desfeita.
+        </p>
+
+        <div class="field mt-4">
+          <label class="checkbox">
+            <input type="checkbox" id="confirmCheckbox">
+            Entendo as consequências desta ação
+          </label>
+        </div>
+      </section>
+
+      <footer class="modal-card-foot">
+        <button class="button is-danger" id="confirmBtn">Excluir</button>
+        <button class="button" id="cancelBtn">Cancelar</button>
+      </footer>
+    </div>
+  </div>
+
+  <footer class="footer custom-footer">
+    <div class="content has-text-centered">
+      <p>
+        Exemplo de estudo com
+        <strong>Bulma</strong>,
+        <strong>Tailwind CSS</strong>,
+        <strong>Animate.css</strong> e
+        <strong>AOS</strong>.
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      
+      AOS.init({
+        duration: 800,
+        once: true,
+        offset: 80
+      });
+
+    
+      const burger = document.getElementById('navbarBurger');
+      const menu = document.getElementById('navbarMenu');
+
+      burger.addEventListener('click', () => {
+        const isActive = burger.classList.toggle('is-active');
+        menu.classList.toggle('is-active');
+        burger.setAttribute('aria-expanded', isActive);
+      });
+
+      
+      document.getElementById('contatoForm').addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const mensagem = document.getElementById('mensagemSucesso');
+        mensagem.style.display = 'block';
+
+        
+        mensagem.classList.remove('animate__animated', 'animate__fadeIn');
+        void mensagem.offsetWidth;
+        mensagem.classList.add('animate__animated', 'animate__fadeIn');
+      });
+
+  
+      const track = document.getElementById('carouselTrack');
+      const slides = Array.from(track.children);
+      const prevBtn = document.getElementById('prevBtn');
+      const nextBtn = document.getElementById('nextBtn');
+      const dotsContainer = document.getElementById('carouselDots');
+
+      let currentIndex = 0;
+
+      slides.forEach((_, i) => {
+        const dot = document.createElement('button');
+
+        dot.classList.add('carousel-dot');
+
+        if (i === 0) {
+          dot.classList.add('is-active');
+        }
+
+        dot.setAttribute('aria-label', `Ir para o slide ${i + 1}`);
+        dot.addEventListener('click', () => goToSlide(i));
+        dotsContainer.appendChild(dot);
+      });
+
+      const dots = Array.from(dotsContainer.children);
+
+      function updateCarousel() {
+        track.style.transform =
+          `translateX(-${currentIndex * 100}%)`;
+
+        dots.forEach((dot, i) => {
+          dot.classList.toggle('is-active', i === currentIndex);
+        });
+      }
+
+      function goToSlide(index) {
+        currentIndex =
+          (index + slides.length) % slides.length;
+
+        updateCarousel();
+      }
+
+      prevBtn.addEventListener('click', () => {
+        goToSlide(currentIndex - 1);
+      });
+
+      nextBtn.addEventListener('click', () => {
+        goToSlide(currentIndex + 1);
+      });
+
+      setInterval(() => {
+        goToSlide(currentIndex + 1);
+      }, 5000);
+
+      const modal = document.getElementById('exampleModal');
+      const openBtn = document.getElementById('openModalBtn');
+      const closeX = document.getElementById('closeModalX');
+      const cancelBtn = document.getElementById('cancelBtn');
+      const confirmBtn = document.getElementById('confirmBtn');
+      const background = modal.querySelector('.modal-background');
+      const modalCard = modal.querySelector('.modal-card');
+
+      function openModal() {
+        modal.classList.add('is-active');
+
+        modalCard.classList.remove('animate__animated', 'animate__zoomIn');
+        void modalCard.offsetWidth;
+        modalCard.classList.add('animate__animated', 'animate__zoomIn');
+      }
+
+      function closeModal() {
+        modal.classList.remove('is-active');
+      }
+
+      openBtn.addEventListener('click', openModal);
+      closeX.addEventListener('click', closeModal);
+      cancelBtn.addEventListener('click', closeModal);
+      background.addEventListener('click', closeModal);
+
+      confirmBtn.addEventListener('click', () => {
+        alert('Item excluído (exemplo de demonstração).');
+        closeModal();
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          closeModal();
+        }
+      });
+
+    });
+  </script>
+</body>
+</html>
