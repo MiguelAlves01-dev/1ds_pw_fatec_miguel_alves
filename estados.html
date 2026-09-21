@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Estados Brasileiros</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <style>
+        body {
+            background: #f5f5f5;
+        }
+
+        .estado {
+            display: none;
+        }
+
+        .estado:target {
+            display: block;
+        }
+
+        #inicio {
+            display: block;
+        }
+
+        .estado img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .botoes {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container py-5">
+
+        <h1 class="text-center mb-4">
+            Estados Brasileiros
+        </h1>
+
+        <p class="text-center mb-5">
+            Clique em um estado para visualizar algumas informações.
+        </p>
+
+        <div class="row">
+
+            <div class="col-md-4">
+
+                <div class="card shadow-sm">
+
+                    <div class="card-header">
+                        <h4>Estados</h4>
+                    </div>
+
+                    <div class="card-body botoes">
+
+                        <div class="d-grid gap-2">
+
+                            <a href="#acre" class="btn btn-outline-primary">Acre</a>
+                            <a href="#alagoas" class="btn btn-outline-primary">Alagoas</a>
+                            <a href="#amapa" class="btn btn-outline-primary">Amapá</a>
+                            <a href="#amazonas" class="btn btn-outline-primary">Amazonas</a>
+                            <a href="#bahia" class="btn btn-outline-primary">Bahia</a>
+                            <a href="#ceara" class="btn btn-outline-primary">Ceará</a>
+                            <a href="#distrito-federal" class="btn btn-outline-primary">Distrito Federal</a>
+                            <a href="#espirito-santo" class="btn btn-outline-primary">Espírito Santo</a>
+                            <a href="#goias" class="btn btn-outline-primary">Goiás</a>
+                            <a href="#maranhao" class="btn btn-outline-primary">Maranhão</a>
+                            <a href="#mato-grosso" class="btn btn-outline-primary">Mato Grosso</a>
+                            <a href="#mato-grosso-sul" class="btn btn-outline-primary">Mato Grosso do Sul</a>
+                            <a href="#minas-gerais" class="btn btn-outline-primary">Minas Gerais</a>
+                            <a href="#para" class="btn btn-outline-primary">Pará</a>
+                            <a href="#paraiba" class="btn btn-outline-primary">Paraíba</a>
+                            <a href="#parana" class="btn btn-outline-primary">Paraná</a>
+                            <a href="#pernambuco" class="btn btn-outline-primary">Pernambuco</a>
+                            <a href="#piaui" class="btn btn-outline-primary">Piauí</a>
+                            <a href="#rio-de-janeiro" class="btn btn-outline-primary">Rio de Janeiro</a>
+                            <a href="#rio-grande-norte" class="btn btn-outline-primary">Rio Grande do Norte</a>
+                            <a href="#rio-grande-sul" class="btn btn-outline-primary">Rio Grande do Sul</a>
+                            <a href="#rondonia" class="btn btn-outline-primary">Rondônia</a>
+                            <a href="#roraima" class="btn btn-outline-primary">Roraima</a>
+                            <a href="#santa-catarina" class="btn btn-outline-primary">Santa Catarina</a>
+                            <a href="#sao-paulo" class="btn btn-outline-primary">São Paulo</a>
+                            <a href="#sergipe" class="btn btn-outline-primary">Sergipe</a>
+                            <a href="#tocantins" class="btn btn-outline-primary">Tocantins</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-8">
+
+                <div id="inicio" class="estado">
+
+                    <div class="card shadow">
+
+                        <div class="card-body text-center">
+
+                            <h2>Brasil</h2>
+
+                            <p>
+                                Selecione um estado ao lado para visualizar
+                                suas informações.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="acre" class="estado">
+
+                    <div class="card shadow">
+
+                        <img
+                            src="rio-branco-acre.jpg"
+                            alt="Acre"
+                        >
+
+                        <div class="card-body">
+
+                            <h2>Acre</h2>
+
+                            <p>
+                                <strong>Capital:</strong> Rio Branco
+                            </p>
+
+                            <p>
+                                <strong>Região:</strong> Norte
+                            </p>
+
+                            <p>
+                                <strong>Sigla:</strong> AC
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="alagoas" class="estado">
+
+                    <div class="card shadow">
+
+                        <img
+                            src="images.jpe"
+                            alt="Alagoas"
+                        >
+
+                        <div class="card-body">
+
+                            <h2>Alagoas</h2>
+
+                            <p>
+                                <strong>Capital:</strong> Maceió
+                            </p>
+
+                            <p>
+                                <strong>Região:</strong> Nordeste
+                            </p>
+
+                            <p>
+                                <strong>Sigla:</strong> AL
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="amapa" class="estado">
+
+                    <div class="card shadow">
+
+                        <img
+                            src="amapa.jpe"
+                            alt="Amapá"
+                        >
+
+                        <div class="card-body">
+
+                            <h2>Amapá</h2>
+
+                            <p>
+                                <strong>Capital:</strong> Macapá
+                            </p>
+
+                            <p>
+                                <strong>Região:</strong> Norte
+                            </p>
+
+                            <p>
+                                <strong>Sigla:</strong> AP
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="amazonas" class="estado">
+
+                    <div class="card shadow">
+
+                        <img
+                            src="amazonia.jpg"
+                            alt="Amazonas"
+                        >
+
+                        <div class="card-body">
+
+                            <h2>Amazonas</h2>
+
+                            <p>
+                                <strong>Capital:</strong> Manaus
+                            </p>
+
+                            <p>
+                                <strong>Região:</strong> Norte
+                            </p>
+
+                            <p>
+                                <strong>Sigla:</strong> AM
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="bahia" class="estado">
+
+                    <div class="card shadow">
+
+                        <img
+                            src="bahia.jpe"
+                            alt="Bahia"
+                        >
+
+                        <div class="card-body">
+
+                            <h2>Bahia</h2>
+
+                            <p>
+                                <strong>Capital:</strong> Salvador
+                            </p>
+
+                            <p>
+                                <strong>Região:</strong> Nordeste
+                            </p>
+
+                            <p>
+                                <strong>Sigla:</strong> BA
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="ceara" class="estado">
+
+                    <div class="card shadow">
+
+                        <img
+                            src="ceara.jpg"
+                            alt="Ceará"
+                        >
+
+                        <div class="card-body">
+
+                            <h2>Ceará</h2>
+
+                            <p>
+                                <strong>Capital:</strong> Fortaleza
+                            </p>
+
+                            <p>
+                                <strong>Região:</strong> Nordeste
+                            </p>
+
+                            <p>
+                                <strong>Sigla:</strong> CE
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="distrito-federal" class="estado">
+
+                    <div class="card shadow">
+
+                        <img
+                            src="distrito-federal-og.webp"
+                            alt="Distrito Federal"
+                        >
+
+                        <div class="card-body">
+
+                            <h2>Distrito Federal</h2>
+
+                            <p>
+                                <strong>Capital:</strong> Brasília
+                            </p>
+
+                            <p>
+                                <strong>Região:</strong> Centro-Oeste
+                            </p>
+
+                            <p>
+                                <strong>Sigla:</strong> DF
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="espirito-santo" class="estado">
+
+                    <div class="card shadow">
+
+                        <img
+                            src="espirito-santo.jpe"
+                            alt="Espírito Santo"
+                        >
+
+                        <div class="card-body">
+
+                            <h2>Espírito Santo</h2>
+
+                            <p>
+                                <strong>Capital:</strong> Vitória
+                            </p>
+
+                            <p>
+                                <strong>Região:</strong> Sudeste
+                            </p>
+
+                            <p>
+                                <strong>Sigla:</strong> ES
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="goias" class="estado">
+
+                    <div class="card shadow">
+
+                        <img
+                            src="goias.jpeg"
+                            alt="Goiás"
+                        >
+
+                        <div class="card-body">
+
+                            <h2>Goiás</h2>
+
+                            <p>
+                                <strong>Capital:</strong> Goiânia
+                            </p>
+
+                            <p>
+                                <strong>Região:</strong> Centro-Oeste
+                            </p>
+
+                            <p>
+                                <strong>Sigla:</strong> GO
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="maranhao" class="estado">
+
+                    <div class="card shadow">
+
+                        <img
+                            src="maranhã.jpe"
+                            alt="Maranhão"
+                        >
+
+                        <div class="card-body">
+
+                            <h2>Maranhão</h2>
+
+                            <p>
+                                <strong>Capital:</strong> São Luís
+                            </p>
+
+                            <p>
+                                <strong>Região:</strong> Nordeste
+                            </p>
+
+                            <p>
+                                <strong>Sigla:</strong> MA
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="mato-grosso" class="estado">
+
+                    <div class="card shadow">
+
+                        <img
+                            src="mato-grosso.jpe"
+                            alt="Mato Grosso"
+                        >
+
+                        <div class="card-body">
+
+                            <h2>Mato Grosso</h2>
+
+                            <p>
+                                <strong>Capital:</strong> Cuiabá
+                            </p>
+
+                            <p>
+                                <strong>Região:</strong> Centro-Oeste
+                            </p>
+
+                            <p>
+                                <strong>Sigla:</strong> MT
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="mato-grosso-sul" class="estado">
+
+                    <div class="card shadow">
+
+                        <img
+                            src="mato-srosso-sul.jpg"
+                            alt="Mato Grosso do Sul"
+                        >
+
+                        <div class="card-body">
+
+                            <h2>Mato Grosso do Sul</h2>
+
+                            <p>
+                                <strong>Capital:</strong> Campo Grande
+                            </p>
+
+                            <p>
+                                <strong>Região:</strong> Centro-Oeste
+                            </p>
+
+                            <p>
+                                <strong>Sigla:</strong> MS
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="minas-gerais" class="estado">
+
+                    <div class="card shadow">
+
+                        <img
+                            src="minas.jpe"
+                            alt="Minas Gerais"
+                        >
+
+                        <div class="card-body">
+
+                            <h2>Minas Gerais</h2>
+
+                            <p>
+                                <strong>Capital:</strong> Belo Horizonte
+                            </p>
+
+                            <p>
+                                <strong>Região:</strong> Sudeste
+                            </p>
+
+                            <p>
+                                <strong>Sigla:</strong> MG
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="para" class="estado">
+
+                    <div class="card shadow">
+
+                        <img
+                            src="para.jpe"
+                            alt="Pará"
+                        >
+
+                        <div class="card-body">
+
+                            <h2>Pará</h2>
+
+                            <p>
+                                <strong>Capital:</strong> Belém
+                            </p>
+
+                            <p>
+                                <strong>Região:</strong> Norte
+                            </p>
+
+                            <p>
+                                <strong>Sigla:</strong> PA
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="paraiba" class="estado">
+
+                    <div class="card shadow">
+
+                        <img
+                            src="paraiba.jpe"
+                            alt="Paraíba"
+                        >
+
+                        <div class="card-body">
+
+                            <h2>Paraíba</h2>
+
+                            <p>
+                                <strong>Capital:</strong> João Pessoa
+                            </p>
+
+                            <p>
+                                <strong>Região:</strong> Nordeste
+                            </p>
+
+                            <p>
+                                <strong>Sigla:</strong> PB
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="parana" class="estado">
+
+                    <div class="card shadow">
+
+                        <img
+                            src="parana.jpe"
+                            alt="Paraná"
+                        >
+
+                        <div class="card-body">
+
+                            <h2>Paraná</h2>
+
+                            <p>
+                                <strong>Capital:</strong> Curitiba
+                            </p>
+
+                            <p>
+                                <strong>Região:</strong> Sul
+                            </p>
+
+                            <p>
+                                <strong>Sigla:</strong> PR
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="pernambuco" class="estado">
+
+                    <div class="card shadow">
+
+                        <img
+                            src="pernambuco.jpe"
+                            alt="Pernambuco"
+                        >
+
+                        <div class="card-body">
+
+                            <h2>Pernambuco</h2>
+
+                            <p>
+                                <strong>Capital:</strong> Recife
+                            </p>
+
+                            <p>
+                                <strong>Região:</strong> Nordeste
+                            </p>
+
+                            <p>
+                                <strong>Sigla:</strong> PE
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="piaui" class="estado">
+
+                    <div class="card shadow">
+
+                        <img
+                            src="piaui.jpe"
+                            alt="Piauí"
+                        >
+
+                        <div class="card-body">
+
+                            <h2>Piauí</h2>
+
+                            <p>
+                                <strong>Capital:</strong> Teresina
+                            </p>
+
+                            <p>
+                                <strong>Região:</strong> Nordeste
+                            </p>
+
+                            <p>
+                                <strong>Sigla:</strong> PI
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="rio-de-janeiro" class="estado">
+
+                    <div class="card shadow">
+
+                        <img
+                            src="rj.jpe"
+                            alt="Rio de Janeiro"
+                        >
+
+                        <div class="card-body">
+
+                            <h2>Rio de Janeiro</h2>
+
+                            <p>
+                                <strong>Capital:</strong> Rio de Janeiro
+                            </p>
+
+                            <p>
+                                <strong>Região:</strong> Sudeste
+                            </p>
+
+                            <p>
+                                <strong>Sigla:</strong> RJ
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="rio-grande-norte" class="estado">
+
+                    <div class="card shadow">
+
+                        <img
+                            src="rio-gn.jpe"
+                            alt="Rio Grande do Norte"
+                        >
+
+                        <div class="card-body">
+
+                            <h2>Rio Grande do Norte</h2>
+
+                            <p>
+                                <strong>Capital:</strong> Natal
+                            </p>
+
+                            <p>
+                                <strong>Região:</strong> Nordeste
+                            </p>
+
+                            <p>
+                                <strong>Sigla:</strong> RN
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="rio-grande-sul" class="estado">
+
+                    <div class="card shadow">
+
+                        <img
+                            src="rio-gs.jpe"
+                            alt="Rio Grande do Sul"
+                        >
+
+                        <div class="card-body">
+
+                            <h2>Rio Grande do Sul</h2>
+
+                            <p>
+                                <strong>Capital:</strong> Porto Alegre
+                            </p>
+
+                            <p>
+                                <strong>Região:</strong> Sul
+                            </p>
+
+                            <p>
+                                <strong>Sigla:</strong> RS
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="rondonia" class="estado">
+
+                    <div class="card shadow">
+
+                        <img
+                            src="rondonia.jpe"
+                            alt="Rondônia"
+                        >
+
+                        <div class="card-body">
+
+                            <h2>Rondônia</h2>
+
+                            <p>
+                                <strong>Capital:</strong> Porto Velho
+                            </p>
+
+                            <p>
+                                <strong>Região:</strong> Norte
+                            </p>
+
+                            <p>
+                                <strong>Sigla:</strong> RO
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="roraima" class="estado">
+
+                    <div class="card shadow">
+
+                        <img
+                            src="roraima.jpe"
+                            alt="Roraima"
+                        >
+
+                        <div class="card-body">
+
+                            <h2>Roraima</h2>
+
+                            <p>
+                                <strong>Capital:</strong> Boa Vista
+                            </p>
+
+                            <p>
+                                <strong>Região:</strong> Norte
+                            </p>
+
+                            <p>
+                                <strong>Sigla:</strong> RR
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="santa-catarina" class="estado">
+
+                    <div class="card shadow">
+
+                        <img
+                            src="santa-c.jpe"
+                            alt="Santa Catarina"
+                        >
+
+                        <div class="card-body">
+
+                            <h2>Santa Catarina</h2>
+
+                            <p>
+                                <strong>Capital:</strong> Florianópolis
+                            </p>
+
+                            <p>
+                                <strong>Região:</strong> Sul
+                            </p>
+
+                            <p>
+                                <strong>Sigla:</strong> SC
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="sao-paulo" class="estado">
+
+                    <div class="card shadow">
+
+                        <img
+                            src="sp.jpe"
+                            alt="São Paulo"
+                        >
+
+                        <div class="card-body">
+
+                            <h2>São Paulo</h2>
+
+                            <p>
+                                <strong>Capital:</strong> São Paulo
+                            </p>
+
+                            <p>
+                                <strong>Região:</strong> Sudeste
+                            </p>
+
+                            <p>
+                                <strong>Sigla:</strong> SP
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="sergipe" class="estado">
+
+                    <div class="card shadow">
+
+                        <img
+                            src="sergipe.jpe"
+                            alt="Sergipe"
+                        >
+
+                        <div class="card-body">
+
+                            <h2>Sergipe</h2>
+
+                            <p>
+                                <strong>Capital:</strong> Aracaju
+                            </p>
+
+                            <p>
+                                <strong>Região:</strong> Nordeste
+                            </p>
+
+                            <p>
+                                <strong>Sigla:</strong> SE
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="tocantins" class="estado">
+
+                    <div class="card shadow">
+
+                        <img
+                            src="tocantins.jpe"
+                            alt="Tocantins"
+                        >
+
+                        <div class="card-body">
+
+                            <h2>Tocantins</h2>
+
+                            <p>
+                                <strong>Capital:</strong> Palmas
+                            </p>
+
+                            <p>
+                                <strong>Região:</strong> Norte
+                            </p>
+
+                            <p>
+                                <strong>Sigla:</strong> TO
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
